@@ -3,6 +3,7 @@ import { storiesOf, action, linkTo } from '@kadira/storybook';
 import Button from './Button';
 import Welcome from './Welcome';
 
+import TestWrapper from '../src/TestWrapper';
 import MyComponent from '../src/index';
 
 storiesOf('Welcome', module)
@@ -20,5 +21,7 @@ storiesOf('Button', module)
 
 storiesOf('Dev', module)
   .add('MyComponent', () => (
-    <MyComponent />
+    <TestWrapper>
+      <MyComponent />
+    </TestWrapper>
   ));
