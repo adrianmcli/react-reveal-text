@@ -2,6 +2,8 @@
 
 A small react library for animating the revealing of text.
 
+See demo here: https://adrianmcli.github.io/react-reveal-text/
+
 TODO - complete this README.
 
 # How to use
