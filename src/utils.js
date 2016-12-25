@@ -1,19 +1,20 @@
-export const getRandoms = (textArray, threshold) =>
-  textArray.reduce((acc, val, index) => {
-    let random = Math.random();
+export const getRandoms = (length, threshold) => {
+  const tooClose = (a, b) => Math.abs(a - b) < threshold;
 
-    // if not first element
-    if (acc.length !== 0) {
-      const prev = acc[index - 1];
-      const tooClose = (a, b) => Math.abs(a - b) < threshold;
+  const result = [];
+  let random = Math.random();
 
-      // generate another num if too close to previous value
+  for (let i = 0; i < length; i += 1) {
+    if (i !== 0) {
+      const prev = result[i - 1];
       while (tooClose(random, prev)) {
         random = Math.random();
       }
     }
-    return acc.concat([random]);
-  }, []);
+    result.push(random);
+  }
+  return result;
+};
 
 export const randomToDelay = (random, min, max) => {
   const float = random * (max - min);
