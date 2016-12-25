@@ -1,0 +1,23 @@
+{
+  "name": "dev-react-component",
+  "version": "0.0.2",
+  "description": "a minimalistic boilerplate for developing a react component as an NPM package",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "start": "npm run storybook",
+    "prepublish": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "@kadira/storybook": "^2.21.0"
+  },
+  "peerDependencies": {
+    "react": ">= 15",
+    "react-dom": ">= 15"
+  }
+}
