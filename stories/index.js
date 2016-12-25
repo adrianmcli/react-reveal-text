@@ -1,27 +1,32 @@
 import React from 'react';
-import { storiesOf, action, linkTo } from '@kadira/storybook';
-import Button from './Button';
-import Welcome from './Welcome';
+import { storiesOf } from '@kadira/storybook';
 
 import TestWrapper from '../src/TestWrapper';
 import MyComponent from '../src/index';
 
-storiesOf('Welcome', module)
-  .add('to Storybook', () => (
-    <Welcome showApp={linkTo('Button')} />
-  ));
-
-storiesOf('Button', module)
-  .add('with text', () => (
-    <Button onClick={action('clicked')}>Hello Button</Button>
-  ))
-  .add('with some emoji', () => (
-    <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>
-  ));
-
 storiesOf('Dev', module)
-  .add('MyComponent', () => (
+  .add('Default', () => (
     <TestWrapper>
       <MyComponent />
+    </TestWrapper>
+  ))
+  .add('Normal', () => (
+    <TestWrapper>
+      <MyComponent text="INFINITY ONE" />
+    </TestWrapper>
+  ))
+  .add('Short', () => (
+    <TestWrapper>
+      <MyComponent text="HELLO" />
+    </TestWrapper>
+  ))
+  .add('Long', () => (
+    <TestWrapper>
+      <MyComponent text="IN A GALAXY FAR FAR AWAY" />
+    </TestWrapper>
+  ))
+  .add('Lowercase', () => (
+    <TestWrapper>
+      <MyComponent text="hello world" />
     </TestWrapper>
   ));
