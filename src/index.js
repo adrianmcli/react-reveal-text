@@ -10,23 +10,23 @@ class Component extends React.Component {
     this.renderToSpan = this.renderToSpan.bind(this);
   }
 
-  getDelays() {
-    const { text, threshold, delayMin, delayMax } = this.props;
-    const textArray = text.split('');
+  getDelays(length) {
+    const { threshold, delayMin, delayMax } = this.props;
 
     // generate random numbers and then convert to delays
-    const randoms = () => getRandoms(textArray, threshold);
+    const randoms = () => getRandoms(length, threshold);
     const toDelay = num => randomToDelay(num, delayMin, delayMax);
 
     return randoms().map(toDelay);
   }
 
   renderToSpan({ character, delay }) {
-    const { show, transitionTime } = this.props;
+    const { show, transitionTime, timingFunction } = this.props;
     const style = {
       opacity: show ? '1' : '0',
       transition: `opacity ${transitionTime}ms`,
       transitionDelay: `${delay}ms`,
+      transitionTimingFunction: timingFunction,
     };
     return <span style={style}>{character}</span>;
   }
@@ -35,7 +35,7 @@ class Component extends React.Component {
     const { text } = this.props;
     const textArray = text.split('');
 
-    const delays = this.getDelays(textArray);
+    const delays = this.getDelays(textArray.length);
     const combineWithDelays =
       (character, index) => ({ character, delay: delays[index] });
 
@@ -47,7 +47,7 @@ class Component extends React.Component {
   render() {
     const { style, className } = this.props;
     return (
-      <div style={style} className={className || ''}>
+      <div style={style} className={className}>
         {this.renderSpans()}
       </div>
     );
@@ -58,6 +58,7 @@ Component.propTypes = {
   text: React.PropTypes.string,
   show: React.PropTypes.boolean,
   transitionTime: React.PropTypes.integer,
+  timingFunction: React.PropTypes.string,
   delayMin: React.PropTypes.integer,
   delayMax: React.PropTypes.integer,
   threshold: React.PropTypes.float,
@@ -68,15 +69,10 @@ Component.propTypes = {
 Component.defaultProps = {
   text: 'REACT REVEAL TEXT',
   transitionTime: 1300,
+  timingFunction: 'linear',
   delayMin: 200,
   delayMax: 1200,
   threshold: 0.2,
-  style: {
-    fontSize: '24px',
-    lineHeight: '36px',
-    fontFamily: 'sans-serif',
-    letterSpacing: '1.2em',
-  },
 };
 
 export default Component;
