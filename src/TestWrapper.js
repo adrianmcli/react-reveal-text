@@ -37,10 +37,13 @@ Component.propTypes = {
 
 Component.defaultProps = {
   style: {
+    background: 'tomato',
     fontSize: '24px',
     lineHeight: '36px',
     fontFamily: 'sans-serif',
+    textAlign: 'center',
     letterSpacing: '1.2em',
+    paddingLeft: '1.2em', // to compensate for letter spacing
   },
 };
 

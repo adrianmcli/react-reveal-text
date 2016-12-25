@@ -4,29 +4,33 @@ import { storiesOf } from '@kadira/storybook';
 import TestWrapper from '../src/TestWrapper';
 import MyComponent from '../src/index';
 
-storiesOf('Examples', module)
-  .add('Default', () => (
+const CenterDecorator = (story) => (
+  <div style={{
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+  }}>
     <TestWrapper>
-      <MyComponent />
+      {story()}
     </TestWrapper>
+  </div>
+);
+
+storiesOf('Examples', module)
+  .addDecorator(CenterDecorator)
+  .add('Default', () => (
+    <MyComponent />
   ))
   .add('Normal', () => (
-    <TestWrapper>
-      <MyComponent text="INFINITY ONE" />
-    </TestWrapper>
+    <MyComponent text="INFINITY ONE" />
   ))
   .add('Short', () => (
-    <TestWrapper>
-      <MyComponent text="HELLO" />
-    </TestWrapper>
+    <MyComponent text="HELLO" />
   ))
   .add('Long', () => (
-    <TestWrapper>
-      <MyComponent text="IN A GALAXY FAR FAR AWAY" />
-    </TestWrapper>
+    <MyComponent text="IN A GALAXY FAR FAR AWAY" />
   ))
   .add('Lowercase', () => (
-    <TestWrapper>
-      <MyComponent text="hello world" />
-    </TestWrapper>
+    <MyComponent text="hello world" />
   ));
