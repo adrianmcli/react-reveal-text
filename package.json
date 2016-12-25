@@ -1,7 +1,7 @@
 {
-  "name": "dev-react-component",
-  "version": "0.0.2",
-  "description": "a minimalistic boilerplate for developing a react component as an NPM package",
+  "name": "react-reveal-text",
+  "version": "0.0.1",
+  "description": "A small react library for animating the revealing of text.",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src --out-dir lib",
