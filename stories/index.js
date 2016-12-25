@@ -4,7 +4,7 @@ import { storiesOf } from '@kadira/storybook';
 import TestWrapper from '../src/TestWrapper';
 import MyComponent from '../src/index';
 
-storiesOf('Dev', module)
+storiesOf('Examples', module)
   .add('Default', () => (
     <TestWrapper>
       <MyComponent />
