@@ -16,10 +16,10 @@ class Component extends React.Component {
 
   render() {
     const { show } = this.state;
-    const { children } = this.props;
+    const { children, style } = this.props;
 
     const child = React.Children.only(children);
-    const ChildComponent = React.cloneElement(child, { show });
+    const ChildComponent = React.cloneElement(child, { show, style });
 
     return (
       <div>
@@ -32,6 +32,16 @@ class Component extends React.Component {
 
 Component.propTypes = {
   children: React.PropTypes.element,
+  style: React.PropTypes.object,  // eslint-disable-line react/forbid-prop-types
+};
+
+Component.defaultProps = {
+  style: {
+    fontSize: '24px',
+    lineHeight: '36px',
+    fontFamily: 'sans-serif',
+    letterSpacing: '1.2em',
+  },
 };
 
 export default Component;
