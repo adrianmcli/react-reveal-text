@@ -277,7 +277,7 @@ aws4@^1.2.1:
 
 babel-cli@^6.18.0:
   version "6.18.0"
-  resolved "http://localhost:4873/babel-cli/-/babel-cli-6.18.0.tgz#92117f341add9dead90f6fa7d0a97c0cc08ec186"
+  resolved "https://registry.yarnpkg.com/babel-cli/-/babel-cli-6.18.0.tgz#92117f341add9dead90f6fa7d0a97c0cc08ec186"
   dependencies:
     babel-core "^6.18.0"
     babel-polyfill "^6.16.0"
@@ -788,7 +788,7 @@ babel-plugin-transform-strict-mode@^6.18.0:
 
 babel-polyfill@^6.16.0:
   version "6.20.0"
-  resolved "http://localhost:4873/babel-polyfill/-/babel-polyfill-6.20.0.tgz#de4a371006139e20990aac0be367d398331204e7"
+  resolved "https://registry.yarnpkg.com/babel-polyfill/-/babel-polyfill-6.20.0.tgz#de4a371006139e20990aac0be367d398331204e7"
   dependencies:
     babel-runtime "^6.20.0"
     core-js "^2.4.0"
@@ -869,7 +869,7 @@ babel-preset-es2017@^6.16.0:
     babel-plugin-syntax-trailing-function-commas "^6.8.0"
     babel-plugin-transform-async-to-generator "^6.16.0"
 
-babel-preset-latest@6.16.0:
+babel-preset-latest@6.16.0, babel-preset-latest@^6.16.0:
   version "6.16.0"
   resolved "https://registry.yarnpkg.com/babel-preset-latest/-/babel-preset-latest-6.16.0.tgz#5b87e19e250bb1213f13af4ec9dc7a51d53f388d"
   dependencies:
@@ -895,7 +895,7 @@ babel-preset-react-app@^1.0.0:
     babel-preset-react "6.16.0"
     babel-runtime "6.11.6"
 
-babel-preset-react@6.16.0:
+babel-preset-react@6.16.0, babel-preset-react@^6.16.0:
   version "6.16.0"
   resolved "https://registry.yarnpkg.com/babel-preset-react/-/babel-preset-react-6.16.0.tgz#aa117d60de0928607e343c4828906e4661824316"
   dependencies:
@@ -1695,7 +1695,7 @@ fresh@0.3.0:
 
 fs-readdir-recursive@^1.0.0:
   version "1.0.0"
-  resolved "http://localhost:4873/fs-readdir-recursive/-/fs-readdir-recursive-1.0.0.tgz#8cd1745c8b4f8a29c8caec392476921ba195f560"
+  resolved "https://registry.yarnpkg.com/fs-readdir-recursive/-/fs-readdir-recursive-1.0.0.tgz#8cd1745c8b4f8a29c8caec392476921ba195f560"
 
 fs.realpath@^1.0.0:
   version "1.0.0"
@@ -1795,7 +1795,7 @@ glob-parent@^2.0.0:
 
 glob@^5.0.5:
   version "5.0.15"
-  resolved "http://localhost:4873/glob/-/glob-5.0.15.tgz#1bc936b9e02f4a603fcc222ecf7633d30b8b93b1"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-5.0.15.tgz#1bc936b9e02f4a603fcc222ecf7633d30b8b93b1"
   dependencies:
     inflight "^1.0.4"
     inherits "2"
@@ -2554,7 +2554,7 @@ osenv@^0.1.0:
 
 output-file-sync@^1.1.0:
   version "1.1.2"
-  resolved "http://localhost:4873/output-file-sync/-/output-file-sync-1.1.2.tgz#d0a33eefe61a205facb90092e826598d5245ce76"
+  resolved "https://registry.yarnpkg.com/output-file-sync/-/output-file-sync-1.1.2.tgz#d0a33eefe61a205facb90092e826598d5245ce76"
   dependencies:
     graceful-fs "^4.1.4"
     mkdirp "^0.5.1"
@@ -2992,6 +2992,15 @@ rc@~1.1.6:
     minimist "^1.2.0"
     strip-json-comments "~1.0.4"
 
+react-build-lib@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/react-build-lib/-/react-build-lib-0.0.1.tgz#da3cc34aa7ba3c4352430d274091e33a6db3b891"
+  dependencies:
+    babel-cli "^6.18.0"
+    babel-preset-latest "^6.16.0"
+    babel-preset-react "^6.16.0"
+    rimraf "^2.5.4"
+
 react-docgen@^2.12.1:
   version "2.13.0"
   resolved "https://registry.yarnpkg.com/react-docgen/-/react-docgen-2.13.0.tgz#7fcc4a3104ea8d4fd428383ba38df11166837be9"
@@ -3229,7 +3238,7 @@ right-align@^0.1.1:
   dependencies:
     align-text "^0.1.1"
 
-rimraf@2, rimraf@~2.5.1, rimraf@~2.5.4:
+rimraf@2, rimraf@^2.5.4, rimraf@~2.5.1, rimraf@~2.5.4:
   version "2.5.4"
   resolved "http://localhost:4873/rimraf/-/rimraf-2.5.4.tgz#96800093cbf1a0c86bd95b4625467535c29dfa04"
   dependencies:
@@ -3598,7 +3607,7 @@ url@^0.11.0:
 
 user-home@^1.1.1:
   version "1.1.1"
-  resolved "http://localhost:4873/user-home/-/user-home-1.1.1.tgz#2b5be23a32b63a7c9deb8d0f28d485724a3df190"
+  resolved "https://registry.yarnpkg.com/user-home/-/user-home-1.1.1.tgz#2b5be23a32b63a7c9deb8d0f28d485724a3df190"
 
 util-deprecate@~1.0.1:
   version "1.0.2"
@@ -3624,7 +3633,7 @@ uuid@^3.0.0:
 
 v8flags@^2.0.10:
   version "2.0.11"
-  resolved "http://localhost:4873/v8flags/-/v8flags-2.0.11.tgz#bca8f30f0d6d60612cc2c00641e6962d42ae6881"
+  resolved "https://registry.yarnpkg.com/v8flags/-/v8flags-2.0.11.tgz#bca8f30f0d6d60612cc2c00641e6962d42ae6881"
   dependencies:
     user-home "^1.1.1"
 
