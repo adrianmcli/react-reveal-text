@@ -1,12 +1,12 @@
 {
   "name": "react-reveal-text",
-  "version": "0.0.1",
+  "version": "0.0.2-alpha-1",
   "description": "A small react library for animating the revealing of text.",
   "main": "lib/index.js",
   "scripts": {
-    "build": "npm run build:lib && npm run build:dist",
+    "build": "npm run build:lib && npm run build:dist && npm run build-storybook",
     "build:lib": "react-build-lib",
-    "build:dist": "react-build-dist",
+    "build:dist": "react-build-dist --bundle-name ReactRevealText.js",
     "start": "npm run storybook",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
@@ -18,6 +18,11 @@
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",
     "@kadira/storybook-deployer": "^1.2.0",
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb": "latest",
+    "eslint-plugin-import": "^2.1.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.6.0",
     "react-build-dist": "^0.0.1-alpha-1",
     "react-build-lib": "^0.0.2"
   },

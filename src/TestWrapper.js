@@ -37,7 +37,6 @@ Component.propTypes = {
 
 Component.defaultProps = {
   style: {
-    background: 'tomato',
     fontSize: '24px',
     lineHeight: '36px',
     fontFamily: 'sans-serif',
