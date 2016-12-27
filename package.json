@@ -4,8 +4,9 @@
   "description": "A small react library for animating the revealing of text.",
   "main": "lib/index.js",
   "scripts": {
-    "build": "npm run build:lib",
+    "build": "npm run build:lib && npm run build:dist",
     "build:lib": "react-build-lib",
+    "build:dist": "react-build-dist",
     "start": "npm run storybook",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
@@ -17,10 +18,12 @@
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",
     "@kadira/storybook-deployer": "^1.2.0",
-    "react-build-lib": "^0.0.1"
+    "react-build-dist": "^0.0.1-alpha-1",
+    "react-build-lib": "^0.0.2"
   },
   "peerDependencies": {
     "react": ">= 15",
     "react-dom": ">= 15"
-  }
+  },
+  "dependencies": {}
 }
