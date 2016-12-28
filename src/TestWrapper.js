@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Component extends React.Component {
+class TestWrapper extends React.Component {
 
   constructor(props) {
     super(props);
@@ -16,10 +16,10 @@ class Component extends React.Component {
 
   render() {
     const { show } = this.state;
-    const { children, style } = this.props;
+    const { children, ...other } = this.props;
 
     const child = React.Children.only(children);
-    const ChildComponent = React.cloneElement(child, { show, style });
+    const ChildComponent = React.cloneElement(child, { show, ...other });
 
     return (
       <div>
@@ -30,12 +30,12 @@ class Component extends React.Component {
   }
 }
 
-Component.propTypes = {
+TestWrapper.propTypes = {
   children: React.PropTypes.element,
   style: React.PropTypes.object,  // eslint-disable-line react/forbid-prop-types
 };
 
-Component.defaultProps = {
+TestWrapper.defaultProps = {
   style: {
     fontSize: '24px',
     lineHeight: '36px',
@@ -46,4 +46,4 @@ Component.defaultProps = {
   },
 };
 
-export default Component;
+export default TestWrapper;

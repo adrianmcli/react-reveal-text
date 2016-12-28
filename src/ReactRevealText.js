@@ -2,7 +2,7 @@ import React from 'react';
 
 import { getRandoms, randomToDelay } from './utils';
 
-class Component extends React.Component {
+class ReactRevealText extends React.Component {
 
   constructor(props) {
     super(props);
@@ -31,8 +31,7 @@ class Component extends React.Component {
     return <span style={style}>{character}</span>;
   }
 
-  renderSpans() {
-    const { text } = this.props;
+  renderSpans(text) {
     const textArray = text.split('');
 
     const delays = this.getDelays(textArray.length);
@@ -46,15 +45,17 @@ class Component extends React.Component {
 
   render() {
     const { style, className } = this.props;
+    const text = this.props.text || this.props.children;
+
     return (
       <div style={style} className={className}>
-        {this.renderSpans()}
+        {this.renderSpans(text)}
       </div>
     );
   }
 }
 
-Component.propTypes = {
+ReactRevealText.propTypes = {
   text: React.PropTypes.string,
   show: React.PropTypes.boolean,
   transitionTime: React.PropTypes.integer,
@@ -64,10 +65,10 @@ Component.propTypes = {
   threshold: React.PropTypes.float,
   style: React.PropTypes.object,  // eslint-disable-line react/forbid-prop-types
   className: React.PropTypes.string,
+  children: React.PropTypes.string,
 };
 
-Component.defaultProps = {
-  text: 'REACT REVEAL TEXT',
+ReactRevealText.defaultProps = {
   transitionTime: 1300,
   timingFunction: 'linear',
   delayMin: 200,
@@ -75,4 +76,4 @@ Component.defaultProps = {
   threshold: 0.2,
 };
 
-export default Component;
+export default ReactRevealText;
