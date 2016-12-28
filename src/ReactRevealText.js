@@ -20,7 +20,7 @@ class ReactRevealText extends React.Component {
     return randoms().map(toDelay);
   }
 
-  renderToSpan({ character, delay }) {
+  renderToSpan({ character, delay }, index) {
     const { show, transitionTime, timingFunction } = this.props;
     const style = {
       opacity: show ? '1' : '0',
@@ -28,7 +28,7 @@ class ReactRevealText extends React.Component {
       transitionDelay: `${delay}ms`,
       transitionTimingFunction: timingFunction,
     };
-    return <span style={style}>{character}</span>;
+    return <span key={index} style={style}>{character}</span>;
   }
 
   renderSpans(text) {
@@ -57,12 +57,12 @@ class ReactRevealText extends React.Component {
 
 ReactRevealText.propTypes = {
   text: React.PropTypes.string,
-  show: React.PropTypes.boolean,
-  transitionTime: React.PropTypes.integer,
+  show: React.PropTypes.bool,
+  transitionTime: React.PropTypes.number,
   timingFunction: React.PropTypes.string,
-  delayMin: React.PropTypes.integer,
-  delayMax: React.PropTypes.integer,
-  threshold: React.PropTypes.float,
+  delayMin: React.PropTypes.number,
+  delayMax: React.PropTypes.number,
+  threshold: React.PropTypes.number,
   style: React.PropTypes.object,  // eslint-disable-line react/forbid-prop-types
   className: React.PropTypes.string,
   children: React.PropTypes.string,

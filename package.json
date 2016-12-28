@@ -1,6 +1,6 @@
 {
   "name": "react-reveal-text",
-  "version": "0.0.2-alpha-2",
+  "version": "0.0.2-alpha-3",
   "description": "A small react library for animating the revealing of text.",
   "main": "lib/index.js",
   "scripts": {
