@@ -1,19 +1,13 @@
-# react-reveal-text
+# React Reveal Text
 
 A small react library for animating the revealing of text.
 
-See demo here: https://adrianmcli.github.io/react-reveal-text/
+<!-- insert gif here -->
 
-TODO - complete this README.
+See demo/docs/tutorial/examples here: https://adrianmcli.github.io/react-reveal-text/
 
-# How to use
-
-...
+The demo page was built with [React Storybook](https://github.com/storybooks/react-storybook).
 
 # Contributing
 
-...
-
-# Warning
-
-This component is currently only available as a transpiled CommonJS module. UMD compilation may be added later to support standalone usage in the future.
+This project was built using my two other tools: [React Build Lib](https://github.com/adrianmcli/react-build-lib) and [React Build Dist](https://github.com/adrianmcli/react-build-dist).
