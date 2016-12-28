@@ -12,7 +12,7 @@ storiesOf('Tutorial', module)
   .addDecorator(withKnobs)
   .addWithInfo('1. A controlled component',
     `
-    ReactRevealText is a controlled component.
+    React Reveal Text is a controlled component.
 
     That means you control its appearance by passing in a prop.
     In this case, it's the \`show\` prop.
