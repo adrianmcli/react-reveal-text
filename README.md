@@ -14,7 +14,7 @@ A small react library for animating the revealing of text.
 
 The demo page was built with [React Storybook](https://github.com/storybooks/react-storybook).
 
-Features
+Features 🎉
 ---------------
 
 * **Simple** – Just plain ol' CSS transition animations.
