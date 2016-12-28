@@ -2,7 +2,7 @@
 
 A small react library for animating the revealing of text.
 
-<!-- insert gif here -->
+![gif animation](react-reveal-text.gif)
 
 **See demo/docs/tutorial/examples here: https://adrianmcli.github.io/react-reveal-text/**
 
