@@ -14,7 +14,7 @@
     "build": "npm run build:lib && npm run build:dist && npm run build-storybook",
     "build:lib": "react-build-lib",
     "build:dist": "react-build-dist --bundle-name ReactRevealText.js",
-    "prepublish": "npm run build && npm run deploy-storybook",
+    "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
