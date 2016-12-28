@@ -1,15 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
-import { withKnobs, text, boolean, object } from '@kadira/storybook-addon-knobs';
 
-import { setOptions } from '@kadira/storybook-addon-options';
-
-import TestWrapper from '../src/TestWrapper';
 import ReactRevealText from '../src/index';
 
 export default () =>
   storiesOf('Examples', module)
-    .addDecorator(withKnobs)
     .addWithInfo('1. Show on load',
       `
       Here is an example that will reveal the text once the component has been mounted.
@@ -18,18 +13,21 @@ export default () =>
 
       ~~~jsx
       class Wrapper extends React.Component {
-        
-        state = { show: false }
-        
+
+        constructor() {
+          super();
+          this.state = { show: false };
+        }
+
         componentDidMount() {
           setTimeout(() => {
             this.setState({ show: true });
-          }, 2000)
+          }, 2000);
         }
 
         render() {
           return (
-            <div style={{border: '1px solid grey', textAlign: 'center'}}>
+            <div style={{ border: '1px solid grey', textAlign: 'center' }}>
               <h1>
                 <ReactRevealText show={this.state.show}>
                   WELCOME TO MY SITE
@@ -43,18 +41,21 @@ export default () =>
       `,
       () => {
         class Wrapper extends React.Component {
-          
-          state = { show: false }
-          
+
+          constructor() {
+            super();
+            this.state = { show: false };
+          }
+
           componentDidMount() {
             setTimeout(() => {
               this.setState({ show: true });
-            }, 2000)
+            }, 2000);
           }
 
           render() {
             return (
-              <div style={{border: '1px solid grey', textAlign: 'center'}}>
+              <div style={{ border: '1px solid grey', textAlign: 'center' }}>
                 <h1>
                   <ReactRevealText show={this.state.show}>
                     WELCOME TO MY SITE
@@ -80,15 +81,20 @@ export default () =>
 
       ~~~jsx
       class Wrapper extends React.Component {
-        
-        state = { show: false }
-        
-        onMouseEnter = () => {
+
+        constructor() {
+          super();
+          this.state = { show: false };
+          this.onMouseEnter = this.onMouseEnter.bind(this);
+          this.onMouseLeave = this.onMouseLeave.bind(this);
+        }
+
+        onMouseEnter() {
           console.log('true');
           this.setState({ show: true });
         }
 
-        onMouseLeave = () => {
+        onMouseLeave() {
           console.log('false');
           this.setState({ show: false });
         }
@@ -98,7 +104,7 @@ export default () =>
             <div
               onMouseEnter={this.onMouseEnter}
               onMouseLeave={this.onMouseLeave}
-              style={{border: '1px solid grey', textAlign: 'center'}}
+              style={{ border: '1px solid grey', textAlign: 'center' }}
             >
               <h1>
                 <ReactRevealText show={this.state.show}>
@@ -113,16 +119,19 @@ export default () =>
       `,
       () => {
         class Wrapper extends React.Component {
-          
-          state = { show: false }
-          
-          onMouseEnter = () => {
-            console.log('true');
+
+          constructor() {
+            super();
+            this.state = { show: false };
+            this.onMouseEnter = this.onMouseEnter.bind(this);
+            this.onMouseLeave = this.onMouseLeave.bind(this);
+          }
+
+          onMouseEnter() {
             this.setState({ show: true });
           }
 
-          onMouseLeave = () => {
-            console.log('false');
+          onMouseLeave() {
             this.setState({ show: false });
           }
 
@@ -131,7 +140,7 @@ export default () =>
               <div
                 onMouseEnter={this.onMouseEnter}
                 onMouseLeave={this.onMouseLeave}
-                style={{border: '1px solid grey', textAlign: 'center'}}
+                style={{ border: '1px solid grey', textAlign: 'center' }}
               >
                 <h1>
                   <ReactRevealText show={this.state.show}>
@@ -160,49 +169,55 @@ export default () =>
 
       ~~~jsx
       class Wrapper extends React.Component {
-          
-          state = { show: false }
-          
-          componentDidMount() {
-            setTimeout(() => {
-              this.setState({ show: true });
-            }, 2000)
-          }
 
-          render() {
-            const bgStyles = {
-              background: 'linear-gradient(135deg, #723362, #9d223c)',
-              padding: '36px',
-            };
-            const textStyles = {
-              color: 'white',
-              fontSize: '24px',
-              lineHeight: '36px',
-              fontFamily: 'sans-serif',
-              textAlign: 'center',
-              letterSpacing: '1em',
-              paddingLeft: '1em', // to compensate for letter spacing
-            };
-            return (
-              <div style={bgStyles}>
-                <div style={textStyles}>
-                  <ReactRevealText show={this.state.show} text="WELCOME TO THE FUTURE" />
-                </div>
-              </div>
-            );
-          }
+        constructor() {
+          super();
+          this.state = { show: false };
         }
+
+        componentDidMount() {
+          setTimeout(() => {
+            this.setState({ show: true });
+          }, 2000);
+        }
+
+        render() {
+          const bgStyles = {
+            background: 'linear-gradient(135deg, #723362, #9d223c)',
+            padding: '36px',
+          };
+          const textStyles = {
+            color: 'white',
+            fontSize: '24px',
+            lineHeight: '36px',
+            fontFamily: 'sans-serif',
+            textAlign: 'center',
+            letterSpacing: '1em',
+            paddingLeft: '1em', // to compensate for letter spacing
+          };
+          return (
+            <div style={bgStyles}>
+              <div style={textStyles}>
+                <ReactRevealText show={this.state.show} text="WELCOME TO THE FUTURE" />
+              </div>
+            </div>
+          );
+        }
+      }
       ~~~
       `,
       () => {
         class Wrapper extends React.Component {
-          
-          state = { show: false }
-          
+
+          constructor() {
+            super();
+            this.state = { show: false };
+          }
+
           componentDidMount() {
             setTimeout(() => {
               this.setState({ show: true });
-            }, 2000)
+            }, 2000);
           }
 
           render() {
@@ -234,5 +249,4 @@ export default () =>
         );
       },
       { propTables: false, inline: true, source: false },
-    )
-
+    );

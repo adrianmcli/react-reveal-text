@@ -67,7 +67,7 @@ ReactRevealText.propTypes = {
   delayMin: React.PropTypes.number,
   delayMax: React.PropTypes.number,
   threshold: React.PropTypes.number,
-  style: React.PropTypes.object,  // eslint-disable-line react/forbid-prop-types
+  style: React.PropTypes.object,
   className: React.PropTypes.string,
   children: React.PropTypes.string,
 };

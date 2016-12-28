@@ -18,9 +18,12 @@ export default () =>
       `,
       () => {
         class Wrapper extends React.Component {
-          
-          state = { show: false }
-          
+
+          constructor() {
+            super();
+            this.state = { show: false };
+          }
+
           componentDidMount() {
             setTimeout(() => {
               this.setState({ show: true });
@@ -46,7 +49,7 @@ export default () =>
               <div style={bgStyles}>
                 <div style={textStyles}>
                   <TestWrapper>
-                  <ReactRevealText text="WELCOME TO THE FUTURE" />
+                    <ReactRevealText text="WELCOME TO THE FUTURE" />
                   </TestWrapper>
                 </div>
               </div>

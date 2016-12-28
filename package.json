@@ -9,14 +9,16 @@
     "url": "https://github.com/adrianmcli/react-reveal-text.git"
   },
   "scripts": {
+    "start": "npm run storybook",
     "build": "npm run build:lib && npm run build:dist && npm run build-storybook",
     "build:lib": "react-build-lib",
     "build:dist": "react-build-dist --bundle-name ReactRevealText.js",
-    "start": "npm run storybook",
     "prepublish": "npm run build && npm run deploy-storybook",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "deploy-storybook": "storybook-to-ghpages"
+    "deploy-storybook": "storybook-to-ghpages",
+    "lint": "eslint src stories",
+    "lint:fix": "eslint src stories --fix"
   },
   "author": "Adrian Li",
   "license": "ISC",

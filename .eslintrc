@@ -1,6 +1,9 @@
 {
   "extends": "airbnb",
   "rules": {
-    "react/jsx-filename-extension": "off"
+    "import/no-extraneous-dependencies": "off",
+    "react/forbid-prop-types": "warn",
+    "react/jsx-filename-extension": "off",
+    "react/no-multi-comp": "warn"
   }
 }

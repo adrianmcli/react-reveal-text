@@ -33,20 +33,20 @@ export default () =>
       () => {
         setOptions({ showDownPanel: true });
         return (
-            <ReactRevealText
-              text={text('text', 'AMAZING TEXT')}
-              show={boolean('show', true)}
-              className={text('className', 'my-class-name')}
-              style={object('style', {
-                color: 'tomato',
-                fontSize: '24px',
-                lineHeight: '36px',
-                textAlign: 'center',
-                fontFamily: 'sans-serif',
-                letterSpacing: '1.2em',
-                paddingLeft: '1.2em', // to compensate for letter spacing
-              })}
-            />
+          <ReactRevealText
+            text={text('text', 'AMAZING TEXT')}
+            show={boolean('show', true)}
+            className={text('className', 'my-class-name')}
+            style={object('style', {
+              color: 'tomato',
+              fontSize: '24px',
+              lineHeight: '36px',
+              textAlign: 'center',
+              fontFamily: 'sans-serif',
+              letterSpacing: '1.2em',
+              paddingLeft: '1.2em', // to compensate for letter spacing
+            })}
+          />
         );
       },
       { propTables: false, inline: true },
@@ -85,7 +85,6 @@ export default () =>
           'ease-in-out': 'ease-in-out',
           'step-start': 'step-end',
         };
-
         const thresholdOptions = {
           range: true,
           min: 0,
@@ -116,15 +115,6 @@ export default () =>
       `,
       () => {
         setOptions({ showDownPanel: true });
-        const timingFnOptions = {
-          linear: 'linear',
-          ease: 'ease',
-          'ease-in': 'ease-in',
-          'ease-out': 'ease-out',
-          'ease-in-out': 'ease-in-out',
-          'step-start': 'step-end',
-        };
-
         const thresholdOptions = {
           range: true,
           min: 0,
