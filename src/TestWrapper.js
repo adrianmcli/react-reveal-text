@@ -32,18 +32,6 @@ class TestWrapper extends React.Component {
 
 TestWrapper.propTypes = {
   children: React.PropTypes.element,
-  style: React.PropTypes.object,  // eslint-disable-line react/forbid-prop-types
-};
-
-TestWrapper.defaultProps = {
-  style: {
-    fontSize: '24px',
-    lineHeight: '36px',
-    fontFamily: 'sans-serif',
-    textAlign: 'center',
-    letterSpacing: '1.2em',
-    paddingLeft: '1.2em', // to compensate for letter spacing
-  },
 };
 
 export default TestWrapper;

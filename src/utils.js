@@ -2,9 +2,10 @@ export const getRandoms = (length, threshold) => {
   const tooClose = (a, b) => Math.abs(a - b) < threshold;
 
   const result = [];
-  let random = Math.random();
+  let random;
 
   for (let i = 0; i < length; i += 1) {
+    random = Math.random();
     if (i !== 0) {
       const prev = result[i - 1];
       while (tooClose(random, prev)) {

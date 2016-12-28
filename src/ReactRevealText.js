@@ -10,6 +10,10 @@ class ReactRevealText extends React.Component {
     this.renderToSpan = this.renderToSpan.bind(this);
   }
 
+  shouldComponentUpdate(nextProps) {
+    return this.props.show !== nextProps.show;
+  }
+
   getDelays(length) {
     const { threshold, delayMin, delayMax } = this.props;
 
