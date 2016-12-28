@@ -3,6 +3,11 @@
   "version": "0.0.1",
   "description": "A small react library for animating the revealing of text.",
   "main": "lib/index.js",
+  "homepage": "https://github.com/adrianmcli/react-reveal-text",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adrianmcli/react-reveal-text.git"
+  },
   "scripts": {
     "build": "npm run build:lib && npm run build:dist && npm run build-storybook",
     "build:lib": "react-build-lib",
@@ -13,7 +18,7 @@
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages"
   },
-  "author": "",
+  "author": "Adrian Li",
   "license": "ISC",
   "devDependencies": {
     "@kadira/react-storybook-addon-info": "^3.3.0",
@@ -33,5 +38,8 @@
     "react": ">= 15",
     "react-dom": ">= 15"
   },
-  "dependencies": {}
+  "keywords": [
+    "react",
+    "react-component"
+  ]
 }
