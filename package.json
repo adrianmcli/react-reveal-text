@@ -9,6 +9,7 @@
     "url": "https://github.com/adrianmcli/react-reveal-text.git"
   },
   "scripts": {
+    "test": "npm run lint",
     "start": "npm run storybook",
     "build": "npm run build:lib && npm run build:dist && npm run build-storybook",
     "build:lib": "react-build-lib",
