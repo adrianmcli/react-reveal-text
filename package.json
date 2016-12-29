@@ -22,7 +22,7 @@
     "lint:fix": "eslint src stories --fix"
   },
   "author": "Adrian Li",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@kadira/react-storybook-addon-info": "^3.3.0",
     "@kadira/storybook": "^2.21.0",
@@ -35,8 +35,8 @@
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.6.0",
     "react": "^15.4.1",
-    "react-build-dist": "^0.0.1-alpha-1",
-    "react-build-lib": "^0.0.2",
+    "react-build-dist": "adrianmcli/react-build-dist",
+    "react-build-lib": "adrianmcli/react-build-lib",
     "react-dom": "^15.4.1"
   },
   "peerDependencies": {
