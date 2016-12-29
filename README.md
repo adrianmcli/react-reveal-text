@@ -47,7 +47,7 @@ This component has many props that you can manipulate; below is a list of all of
 
 Note that the component only re-renders when the `show` property has been changed.
 
-### Basic Properties
+## Basic Properties
 
 **text** *(string)*  
 You can set the text either by passing in text as children or by using the text property.
@@ -61,7 +61,7 @@ This prop allows you to set the className for the div surrounding the text.
 **style** *(object)*  
 This prop allows you to pass in styles for the div surrounding the text.
 
-### Transition Properties
+## Transition Properties
 
 Each letter has its own randomly generated delay before its transition begins.
 
