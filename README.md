@@ -40,7 +40,10 @@ Getting Started
 
 API
 ---------------
-This component has many props that you can manipulate.
+
+### Interactive docs with live-editable props [here](https://adrianmcli.github.io/react-reveal-text/?knob-text=AMAZING%20TEXT&knob-show=true&knob-className=my-class-name&knob-style=%7B%22color%22%3A%22tomato%22%2C%22fontSize%22%3A%2224px%22%2C%22lineHeight%22%3A%2236px%22%2C%22textAlign%22%3A%22center%22%2C%22fontFamily%22%3A%22sans-serif%22%2C%22letterSpacing%22%3A%221.2em%22%2C%22paddingLeft%22%3A%221.2em%22%7D&selectedKind=Documentation&selectedStory=Basic%20Properties&full=0&down=1&left=1&panelRight=1&downPanel=kadirahq%2Fstorybook-addon-knobs).
+
+This component has many props that you can manipulate; below is a list of all of them.
 
 Note that the component only re-renders when the `show` property has been changed.
 
