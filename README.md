@@ -49,38 +49,36 @@ Note that the component only re-renders when the `show` property has been change
 
 ## Basic Properties
 
-**text** *(string)*  
-You can set the text either by passing in text as children or by using the text property.
+- **text** *(string)*  
+  You can set the text either by passing in text as children or by using the text property.
 
-**show** *(boolean)*  
-This prop allows you to control what state the component is in. It allows you to hide or reveal the text.
+- **show** *(boolean)*  
+  This prop allows you to control what state the component is in. It allows you to hide or reveal the text.
 
-**className** *(string)*  
-This prop allows you to set the className for the div surrounding the text.
+- **className** *(string)*  
+  This prop allows you to set the className for the div surrounding the text.
 
-**style** *(object)*  
-This prop allows you to pass in styles for the div surrounding the text.
+- **style** *(object)*  
+  This prop allows you to pass in styles for the div surrounding the text.
 
 ## Transition Properties
 
 Each letter has its own randomly generated delay before its transition begins.
 
-**transitionTime** *(integer)* [default: 1300]  
-The time it takes for each letter's transition.
+- **transitionTime** *(integer)* [default: 1300]  
+  The time it takes for each letter's transition.
 
-**timingFunction** *(string)* [default: 'linear']  
-The CSS transition-timing-function property. On this page, you are given a dropdown selection, but in practice (and in the sandbox), you can enter in any valid string.
+- **timingFunction** *(string)* [default: 'linear']  
+  The CSS transition-timing-function property. On this page, you are given a dropdown selection, but in practice (and in the sandbox), you can enter in any valid string.
 
-**delayMin** *(integer)* [default: 200]  
-The minimum allowable delay before the transition for a letter is to begin.
+- **delayMin** *(integer)* [default: 200]  
+  The minimum allowable delay before the transition for a letter is to begin.
 
-**delayMax** *(integer)* [default: 1200]  
-The maximum allowable delay before the transition for a letter is to begin.
+- **delayMax** *(integer)* [default: 1200]  
+  The maximum allowable delay before the transition for a letter is to begin.
 
-**threshold** *(float)* [default: 0.2]  
-The difference between the random numbers generated for each letter compared to the previous letter.
-Setting this higher will force the delays to be very different between each letter, spreading out the effect.
-Setting this lower will allow delays to be similar between letters, sometimes creating a chunking effect.
+- **threshold** *(float)* [default: 0.2]  
+  The difference between the random numbers generated for each letter compared to the previous letter. Setting this higher will force the delays to be very different between each letter, spreading out the effect. Setting this lower will allow delays to be similar between letters, sometimes creating a chunking effect.
 
 Contributing
 ---------------
