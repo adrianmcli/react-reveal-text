@@ -40,8 +40,8 @@
     "react-dom": "^15.4.1"
   },
   "peerDependencies": {
-    "react": ">= 15",
-    "react-dom": ">= 15"
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0"
   },
   "keywords": [
     "react",
