@@ -83,4 +83,4 @@ Each letter has its own randomly generated delay before its transition begins.
 Contributing
 ---------------
 
-This project was built using my two other tools: [React Build Lib](https://github.com/adrianmcli/react-build-lib) and [React Build Dist](https://github.com/adrianmcli/react-build-dist). These tools are still very early in development, so if you are building these libraries, you may encounter some bugs. PRs and issues are welcomed and encouraged!
+This project was built using my two other tools: [React Build Lib](https://github.com/adrianmcli/react-build-lib) and [React Build Dist](https://github.com/adrianmcli/react-build-dist). These tools are still very early in development, so if you are building these libraries, you may encounter some bugs. PRs and issues are welcomed and encouraged! Should probably add some testing too.
