@@ -20,7 +20,7 @@ Features 🎉
 * **Simple** – Just plain ol' CSS transition animations.
 * **Zero dependencies** – Keeping it light and lit up!
 * **Flexible** – Choose your own easing function and timing.
-* **Customizeable** – Customize and theme like a regular div.
+* **Customizable** – Customize and theme like a regular div.
 * **Dynamic** – Intelligent generation of random transition delay numbers.
 
 Getting Started
