@@ -1,6 +1,6 @@
 {
   "name": "react-reveal-text",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A small react library for animating the revealing of text.",
   "main": "lib/index.js",
   "homepage": "https://github.com/adrianmcli/react-reveal-text",
@@ -35,7 +35,7 @@
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.6.0",
     "react": "^15.4.1",
-    "react-build-dist": "adrianmcli/react-build-dist",
+    "react-build-dist": "^0.0.6",
     "react-build-lib": "adrianmcli/react-build-lib",
     "react-dom": "^15.4.1"
   },
