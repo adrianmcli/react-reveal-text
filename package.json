@@ -35,7 +35,7 @@
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.6.0",
     "react": "^15.4.1",
-    "react-build-dist": "^0.0.6",
+    "react-build-dist": "^0.0.8",
     "react-build-lib": "adrianmcli/react-build-lib",
     "react-dom": "^15.4.1"
   },

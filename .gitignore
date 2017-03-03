@@ -3,3 +3,4 @@ lib
 dist
 storybook-static
 yarn-error.log
+npm-debug.log
