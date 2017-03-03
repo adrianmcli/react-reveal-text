@@ -1,9 +1,9 @@
 React Reveal Text
 ---------------
-![npm](https://img.shields.io/npm/v/react-reveal-text.svg)
-![dependencies](https://img.shields.io/david/adrianmcli/react-reveal-text.svg)
-![travis](https://img.shields.io/travis/adrianmcli/react-reveal-text.svg)
-![bithound](https://img.shields.io/bithound/code/github/adrianmcli/react-reveal-text.svg)
+[![npm](https://img.shields.io/npm/v/react-reveal-text.svg)](https://www.npmjs.com/package/react-reveal-text)
+[![dependencies](https://img.shields.io/david/adrianmcli/react-reveal-text.svg)](https://github.com/adrianmcli/react-reveal-text/blob/master/package.json)
+[![travis](https://img.shields.io/travis/adrianmcli/react-reveal-text.svg)](https://travis-ci.org/adrianmcli/react-reveal-text)
+[![bithound](https://img.shields.io/bithound/code/github/adrianmcli/react-reveal-text.svg)](https://www.bithound.io/github/adrianmcli/react-reveal-text)
 ![license](https://img.shields.io/npm/l/react-reveal-text.svg)
 
 A small react library for animating the revealing of text.
