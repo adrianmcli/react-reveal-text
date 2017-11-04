@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { getRandoms, randomToDelay } from './utils';
 
@@ -60,16 +61,16 @@ class ReactRevealText extends React.Component {
 }
 
 ReactRevealText.propTypes = {
-  text: React.PropTypes.string,
-  show: React.PropTypes.bool,
-  transitionTime: React.PropTypes.number,
-  timingFunction: React.PropTypes.string,
-  delayMin: React.PropTypes.number,
-  delayMax: React.PropTypes.number,
-  threshold: React.PropTypes.number,
-  style: React.PropTypes.object,
-  className: React.PropTypes.string,
-  children: React.PropTypes.string,
+  text: PropTypes.string,
+  show: PropTypes.bool,
+  transitionTime: PropTypes.number,
+  timingFunction: PropTypes.string,
+  delayMin: PropTypes.number,
+  delayMax: PropTypes.number,
+  threshold: PropTypes.number,
+  style: PropTypes.object,
+  className: PropTypes.string,
+  children: PropTypes.string,
 };
 
 ReactRevealText.defaultProps = {

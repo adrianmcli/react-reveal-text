@@ -1,6 +1,6 @@
 {
   "name": "react-reveal-text",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "A small react library for animating the revealing of text.",
   "main": "lib/index.js",
   "homepage": "https://github.com/adrianmcli/react-reveal-text",
@@ -30,21 +30,21 @@
     "@kadira/storybook-addon-options": "^1.0.1",
     "@kadira/storybook-deployer": "^1.2.0",
     "eslint": "^3.9.1",
-    "eslint-config-airbnb": "latest",
+    "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.1.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.6.0",
-    "react": "^15.4.1",
     "react-build-dist": "^0.0.8",
-    "react-build-lib": "adrianmcli/react-build-lib",
-    "react-dom": "^15.4.1"
+    "react-build-lib": "adrianmcli/react-build-lib"
   },
-  "peerDependencies": {
-    "react": "^15.4.0",
-    "react-dom": "^15.4.0"
-  },
+  "peerDependencies": {},
   "keywords": [
     "react",
     "react-component"
-  ]
+  ],
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  }
 }
