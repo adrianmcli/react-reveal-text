@@ -25,7 +25,7 @@ export default () =>
         In this case, it's the \`show\` prop.
 
         Click the "Knobs" tab on the bottom and try changing the state.
-      `
+      `,
     })(() => {
       setOptions({ showDownPanel: true });
       return (
@@ -52,7 +52,7 @@ export default () =>
         Or, you can also pass in a string to the \`className\` prop.
 
         Note that the component only re-renders when the \`show\` prop is changed.
-      `
+      `,
     })(() => {
       setOptions({ showDownPanel: true });
       return (
@@ -86,13 +86,13 @@ export default () =>
         ~~~jsx
         import TestWrapper from 'react-reveal-text/lib/TextWrapper';
         ~~~
-      `
+      `,
     })(() => {
       setOptions({ showDownPanel: true });
-        return (
-          <TestWrapper
-            text={text('text', 'AMAZING TEXT')}
-            style={object('style', {
+      return (
+        <TestWrapper
+          text={text('text', 'AMAZING TEXT')}
+          style={object('style', {
               color: 'tomato',
               fontSize: '24px',
               lineHeight: '36px',
@@ -101,8 +101,8 @@ export default () =>
               letterSpacing: '1.2em',
               paddingLeft: '1.2em', // to compensate for letter spacing
             })}
-          >
-            <ReactRevealText />
-          </TestWrapper>
-        );
-    }))
+        >
+          <ReactRevealText />
+        </TestWrapper>
+      );
+    }));

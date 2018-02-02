@@ -32,7 +32,7 @@ export default () =>
 
         **style** *(object)*  
         This prop allows you to pass in styles for the div surrounding the text.
-      `
+      `,
     })(() => {
       setOptions({ showDownPanel: true });
       return (
@@ -76,7 +76,7 @@ export default () =>
         The difference between the random numbers generated for each letter compared to the previous letter.
         Setting this higher will force the delays to be very different between each letter, spreading out the effect.
         Setting this lower will allow delays to be similar between letters, sometimes creating a chunking effect.
-      `
+      `,
     })(() => {
       setOptions({ showDownPanel: true });
       const timingFnOptions = {
@@ -114,7 +114,7 @@ export default () =>
         This page has all the properties for you to play with.
 
         Note that you can input \`timingFunction\` as a string on the knobs tab.
-      `
+      `,
     })(() => {
       setOptions({ showDownPanel: true });
       const thresholdOptions = {
@@ -146,4 +146,4 @@ export default () =>
           />
         </TestWrapper>
       );
-    }))
+    }));

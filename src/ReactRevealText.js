@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { getRandoms, randomToDelay } from './utils';
 
 class ReactRevealText extends React.Component {
-
   constructor(props) {
     super(props);
     this.getDelays = this.getDelays.bind(this);
@@ -82,6 +81,11 @@ ReactRevealText.defaultProps = {
   delayMin: 200,
   delayMax: 1200,
   threshold: 0.2,
+  text: '',
+  className: '',
+  style: {},
+  show: false,
+  children: undefined,
 };
 
 export default ReactRevealText;

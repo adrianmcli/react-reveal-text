@@ -42,10 +42,9 @@ export default () =>
           }
         }
         ~~~
-      `
+      `,
     })(() => {
       class Wrapper extends React.Component {
-
         constructor() {
           super();
           this.state = { show: false };
@@ -120,10 +119,9 @@ export default () =>
           }
         }
         ~~~
-      `
+      `,
     })(() => {
       class Wrapper extends React.Component {
-
         constructor() {
           super();
           this.state = { show: false };
@@ -209,10 +207,9 @@ export default () =>
           }
         }
         ~~~
-      `
+      `,
     })(() => {
       class Wrapper extends React.Component {
-
         constructor() {
           super();
           this.state = { show: false };
@@ -251,4 +248,4 @@ export default () =>
       return (
         <Wrapper />
       );
-    }))
+    }));
