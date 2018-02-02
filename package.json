@@ -24,14 +24,6 @@
   "author": "Adrian Li",
   "license": "MIT",
   "devDependencies": {
-    "@storybook/addon-actions": "^3.3.11",
-    "@storybook/addon-info": "^3.3.11",
-    "@storybook/addon-knobs": "^3.3.11",
-    "@storybook/addon-links": "^3.3.11",
-    "@storybook/addon-options": "^3.3.11",
-    "@storybook/addons": "^3.3.11",
-    "@storybook/react": "^3.3.11",
-    "@storybook/storybook-deployer": "^2.2.0",
     "babel-core": "^6.26.0",
     "eslint": "^4.16.0",
     "eslint-config-airbnb": "^16.1.0",
@@ -39,7 +31,15 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.6.1",
     "react-build-dist": "^0.0.8",
-    "react-build-lib": "adrianmcli/react-build-lib"
+    "react-build-lib": "adrianmcli/react-build-lib",
+    "@storybook/addon-actions": "^3.3.11",
+    "@storybook/addon-info": "^3.3.11",
+    "@storybook/addon-knobs": "^3.3.11",
+    "@storybook/addon-links": "^3.3.11",
+    "@storybook/addon-options": "^3.3.11",
+    "@storybook/addons": "^3.3.11",
+    "@storybook/react": "^3.3.11",
+    "@storybook/storybook-deployer": "^2.2.0"
   },
   "peerDependencies": {},
   "keywords": [
