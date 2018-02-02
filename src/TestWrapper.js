@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class TestWrapper extends React.Component {
 
@@ -31,7 +32,7 @@ class TestWrapper extends React.Component {
 }
 
 TestWrapper.propTypes = {
-  children: React.PropTypes.element,
+  children: PropTypes.element,
 };
 
 export default TestWrapper;

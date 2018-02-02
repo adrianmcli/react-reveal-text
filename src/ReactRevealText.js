@@ -12,7 +12,10 @@ class ReactRevealText extends React.Component {
   }
 
   shouldComponentUpdate(nextProps) {
-    return this.props.show !== nextProps.show;
+    const showChanged = this.props.show !== nextProps.show;
+    const textChanged = this.props.text !== nextProps.text;
+    const childrenChanged = this.props.children !== nextProps.children;
+    return showChanged || textChanged || childrenChanged;
   }
 
   getDelays(length) {

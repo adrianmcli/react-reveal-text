@@ -1,22 +1,9 @@
-import { configure, setAddon } from '@kadira/storybook';
+import { configure } from '@storybook/react';
 
-import infoAddon from '@kadira/react-storybook-addon-info';
-import { setOptions } from '@kadira/storybook-addon-options';
-
+// automatically import all files ending in *.stories.js
+const req = require.context('../stories', true, /.stories.js$/);
 function loadStories() {
-  require('../stories');
+  req.keys().forEach((filename) => req(filename));
 }
-
-// set options for addons
-setAddon(infoAddon);
-setOptions({
-  name: 'REACT REVEAL TEXT',
-  url: 'https://github.com/adrianmcli/react-reveal-text',
-  goFullScreen: false,
-  showLeftPanel: true,
-  showDownPanel: true,
-  showSearchBox: false,
-  downPanelInRight: true,
-});
 
 configure(loadStories, module);
